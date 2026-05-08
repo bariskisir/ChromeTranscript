@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- Side panel document shell for transcript capture controls and output. -->
+<html lang="en" class="ct-sidepanel">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chrome Transcript</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="ct-app" class="ct-shell">
+      <header class="ct-status-row">
+        <span id="statusText">Ready.</span>
+      </header>
+
+      <section class="ct-controls">
+        <div class="ct-nav-row">
+          <button id="previousButton" class="ct-icon-button" type="button" title="Previous transcript" aria-label="Previous transcript">&lt;</button>
+          <span id="transcriptCounter" class="ct-counter">0/0</span>
+          <button id="nextButton" class="ct-icon-button" type="button" title="Next transcript" aria-label="Next transcript">&gt;</button>
+          <button id="newButton" class="ct-icon-button" type="button" title="New transcript" aria-label="New transcript">+</button>
+          <button id="copyButton" class="ct-icon-button" type="button" title="Copy transcript" aria-label="Copy transcript">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="9" y="9" width="10" height="10" rx="2"></rect>
+              <path d="M5 15V7a2 2 0 0 1 2-2h8"></path>
+            </svg>
+          </button>
+          <button id="deleteButton" class="ct-icon-button ct-delete-button" type="button" title="Delete transcript" aria-label="Delete transcript">x</button>
+          <select id="languageSelect" title="Language" aria-label="Language"></select>
+          <div class="ct-session-actions">
+            <button id="startButton" class="ct-primary" type="button">Start</button>
+            <button id="stopButton" type="button" hidden>Stop</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ct-body">
+        <div id="transcriptText" class="ct-transcript"></div>
+      </section>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>
