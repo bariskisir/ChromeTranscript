@@ -2,6 +2,8 @@
 
 ChromeTranscript is a local Chrome extension that captures audio and transcribes speech with Deepgram. It stores multiple transcripts locally, lets you switch between them, and keeps the interface focused on live transcription.
 
+Desktop App -> https://github.com/bariskisir/Transcript
+
 <img src="images/interface.png" alt="ChromeTranscript popup" width="80%">
 
 ---
